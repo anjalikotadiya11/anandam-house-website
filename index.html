@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="public/logo.jpg">
+  <title>Anandam House</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="container">
+        <span class="contact-info">+91 8758582395 | anandam.common@gmail.com</span>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="nav-flex">
+        <div class="logo-container">
+          <img src="public/logo.jpg" alt="Anandam House" class="logo">
+        </div>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
+            <div class="dropdown-menu">
+              <a href="#services">All Services</a>
+              <a href="life-insurance.html">Life Insurance</a>
+              <a href="general-insurance.html">General Insurance</a>
+              <a href="jewellers-block-insurance.html">Jewellers Block Insurance</a>
+              <a href="fire-insurance.html">Fire Insurance</a>
+              <a href="term-insurance.html">Term Insurance</a>
+              <a href="health-insurance.html">Health Insurance</a>
+              <a href="motor-insurance.html">Motor Insurance</a>
+              <a href="property-insurance.html">Property Insurance</a>
+              <a href="travel-insurance.html">Travel Insurance</a>
+              <a href="personal-accident.html">Personal Accident</a>
+              <a href="group-insurance.html">Group Insurance</a>
+              <a href="mutual-funds.html">Mutual Funds</a>
+              <a href="free-service.html">Free Service</a>
+            </div>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="pay-premium.html">Pay Premium</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  
+  <!-- Mobile Menu Panel -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <img src="public/logo.jpg" alt="Anandam House" class="logo">
+      <button class="mobile-close" id="mobileClose">×</button>
+    </div>
+    <ul class="mobile-nav-menu">
+      <li><a href="index.html">Home</a></li>
+              <li class="mobile-dropdown">
+          <a href="#" class="mobile-dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
+          <div class="mobile-dropdown-menu">
+            <a href="#services">All Services</a>
+            <a href="life-insurance.html">Life Insurance</a>
+            <a href="general-insurance.html">General Insurance</a>
+            <a href="jewellers-block-insurance.html">Jewellers Block Insurance</a>
+            <a href="fire-insurance.html">Fire Insurance</a>
+            <a href="term-insurance.html">Term Insurance</a>
+            <a href="health-insurance.html">Health Insurance</a>
+            <a href="motor-insurance.html">Motor Insurance</a>
+            <a href="property-insurance.html">Property Insurance</a>
+            <a href="travel-insurance.html">Travel Insurance</a>
+            <a href="personal-accident.html">Personal Accident</a>
+            <a href="group-insurance.html">Group Insurance</a>
+            <a href="mutual-funds.html">Mutual Funds</a>
+            <a href="free-service.html">Free Service</a>
+          </div>
+        </li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Photo Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="pay-premium.html">Pay Premium</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  
+  <main>
+    <section class="hero">
+      <div class="slider" id="hero-slider">
+        <button class="slider-btn prev" aria-label="Previous Slide">&#8592;</button>
+        <div class="slide active" style="background-image: url('public/slide-1.jpg');">
+          <div class="hero-overlay">
+            <h1>Protect Your Family's Future</h1>
+            <p>Comprehensive insurance solutions for peace of mind.</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('public/slide-2.jpg');">
+          <div class="hero-overlay">
+            <h1>Plan for a Secure Tomorrow</h1>
+            <p>Retirement, health, and wealth management made easy.</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('public/slide-3.jpg');">
+          <div class="hero-overlay">
+            <h1>Grow Your Investments</h1>
+            <p>Smart mutual funds and savings for every goal.</p>
+          </div>
+        </div>
+        <button class="slider-btn next" aria-label="Next Slide">&#8594;</button>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Our Range of Financial Services</h2>
+        
+        <!-- Main Services (4 visible) -->
+        <div class="main-services">
+          <div class="service-item">
+            <a href="life-insurance.html">
+              <h3>Life Insurance</h3>
+              <p>Comprehensive life coverage for your family's financial security</p>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="general-insurance.html">
+              <h3>General Insurance</h3>
+              <p>Protection for your assets, health, and travel needs</p>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="jewellers-block-insurance.html">
+              <h3>Jewellers Block Insurance</h3>
+              <p>Specialized coverage for jewelry businesses and valuables</p>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="mutual-funds.html">
+              <h3>Mutual Funds</h3>
+              <p>Investment solutions for wealth creation and growth</p>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Additional Services Slider -->
+        <div class="additional-services">
+          <h3>More Insurance Solutions</h3>
+          <div class="services-slider">
+            <button class="service-slider-btn prev" aria-label="Previous Service">&#8592;</button>
+            <div class="services-container">
+              <div class="service-slide active">
+                <div class="service-card">
+                  <h4>Term Insurance</h4>
+                  <p>Affordable pure life coverage for specific periods</p>
+                </div>
+              </div>
+              <div class="service-slide">
+                <div class="service-card">
+                  <h4>Health Insurance</h4>
+                  <p>Medical coverage for you and your family</p>
+                </div>
+              </div>
+              <div class="service-slide">
+                <div class="service-card">
+                  <h4>Motor Insurance</h4>
+                  <p>Comprehensive coverage for your vehicles</p>
+                </div>
+              </div>
+              <div class="service-slide">
+                <div class="service-card">
+                  <h4>Property Insurance</h4>
+                  <p>Protection for your home and commercial property</p>
+                </div>
+              </div>
+              <div class="service-slide">
+                <div class="service-card">
+                  <h4>Travel Insurance</h4>
+                  <p>Coverage for domestic and international travel</p>
+                </div>
+              </div>
+              <div class="service-slide">
+                <div class="service-card">
+                  <h4>Personal Accident</h4>
+                  <p>Financial protection against accidental injuries</p>
+                </div>
+              </div>
+              <div class="service-slide">
+                <div class="service-card">
+                  <h4>Group Insurance</h4>
+                  <p>Corporate insurance solutions for businesses</p>
+                </div>
+              </div>
+              <div class="service-slide">
+                <div class="service-card">
+                  <h4>Fire Insurance</h4>
+                  <p>Protection against fire damage to your property</p>
+                </div>
+              </div>
+            </div>
+            <button class="service-slider-btn next" aria-label="Next Service">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="knowledge-centre" id="knowledge">
+      <div class="container">
+        <h2>We Secure</h2>
+        <ul class="knowledge-list">
+          <li>Retirement Planning</li>
+          <li>Child Education</li>
+          <li>Group Gratuity</li>
+          <li>Replacement of Income</li>
+          <li>General Insurance</li>
+          <li>Liability Hedging</li>
+          <li>Estate Creation</li>
+          <li>Business Continuity</li>
+        </ul>
+      </div>
+    </section>
+    <section class="statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="stat-number" data-target="22">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number" data-target="1500">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-label">Awards</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Associated Insurance Company</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="stat-number" data-target="30">0</div>
+            <div class="stat-label">AMC</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-list">
+          <div class="testimonial-item">
+            <p>"I had a fantastic experience working with Anandam House. Kishan Kotadiya and his team took time to understand my long-term goals and offered a tailored insurance strategy that truly made sense for my business."</p>
+            <span>- Harish Khachar, Surgi Safe</span>
+          </div>
+          <div class="testimonial-item">
+            <p>"Kishan Kotadiya and his Anandam House team have deep knowledge of insurance planning. They listened patiently to my family's priorities and offered a practical, transparent solution."</p>
+            <span>- Madhubhai Patel, Swati Dyestuff Industries, Ahmedabad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="associated-companies">
+      <div class="container">
+        <h2>Companies Associated With Us</h2>
+        <div class="company-carousel" id="companyCarousel">
+          <div class="carousel-track">
+            <img src="public/lic.jpeg" alt="LIC" class="carousel-logo">
+            <img src="public/hdfclife.png" alt="HDFC Life" class="carousel-logo">
+            <img src="public/iciciprudential.png" alt="ICICI Prudential" class="carousel-logo">
+            <img src="public/SBIlogo.png" alt="SBI Life" class="carousel-logo">
+            <img src="public/axismax.png" alt="Max Life" class="carousel-logo">
+            <img src="public/Bajajalliance.png" alt="Bajaj Allianz Life" class="carousel-logo">
+            <img src="public/tataaia.svg" alt="Tata AIA Life" class="carousel-logo">
+            <img src="public/adityabirla.jpg" alt="Aditya Birla Sun Life" class="carousel-logo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <address>
+          Address: B1, Vighneshwar Estate, B/s HDFC Bank, near Gandhi Smruti Bhavan, Nanpura, Surat, Gujarat – 395001
+          <a href="https://maps.app.goo.gl/DgH6DYtn9yAk3K619" target="_blank" rel="noopener" class="map-link">(Get Directions)</a><br>
+          Tel: +91 8758582395<br>
+          Mobile: +91 8758582395<br>
+          Email: anandam.common@gmail.com
+        </address>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>All rights reserved &copy; Anandam House 2025</p>
+      <ul class="footer-links">
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
